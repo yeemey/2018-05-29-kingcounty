@@ -542,7 +542,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       (some older browsers, including Internet Explorer version 9
       and below, are not).
     </p>
-  <!--
   <div class="row">
     <div class="col-md-4">
 	    
@@ -595,12 +594,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
           Close the terminal window.
         </li>
       </ol>
-    </div>
-    -->
-  <!--  
+    </div> 
   </div>
-  -->
-<!--  
 {% comment %}
   <p>
   Once you are done installing the software listed above,
@@ -754,7 +749,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
 {% comment %}
 <div id="vm">
-  <!--
   <h3>Virtual Machine</h3>
   <p>
     Some instructors prefer to have learners use a virtual machine (VM)
