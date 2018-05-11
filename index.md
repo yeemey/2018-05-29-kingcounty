@@ -310,6 +310,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <p>
 	The instructions for the full set of  tools are provided below for people who either have administrator privileges 
 	on their King County machines or would like to follow long with these lessons on their personal computers. 
+  </p>
+  <p>
 	<strong>Please do not attempt to follow the instructions for tools beyond Bash/Git on a KCIT machine!</strong>
   </p>
 </div> {% comment %} End of KCIT section. {% endcomment %}
@@ -468,10 +470,19 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </p>
   <p>
 	The instructions below are provided for people who either have administrator privileges or would like to follow 
-	along with these lessons on their personal computers. <strong>Please do not attempt to follow these instructions on a 
+	along with these lessons on their personal computers. 
+  </p>
+  <p>&nbsp</p>
+  <p>&nbsp</p>
+  <p>&nbsp</p>
+  <p>
+	<strong>Please do not attempt to follow the instructions below on a 
 	KCIT machine!</strong>
   </p>
-</div> {% comment %} End of KCIT section. {% endcomment %}
+  <p>&nbsp</p>
+  <p>&nbsp</p>
+  <p>&nbsp</p>
+  </div> {% comment %} End of KCIT-specific section. {% endcomment %}
 
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
   <h3>Text Editor</h3>
