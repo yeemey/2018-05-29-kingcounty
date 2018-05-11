@@ -302,15 +302,15 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <h3>Set up for King County machines</h3>
 
   <p>
-        Git for Windows (including Bash) can be installed without administrator privileges.  Follow the instructions below.
+        The Bash shell and Git for Windows can be installed without administrator privileges.  Follow the instructions below.
 	Installation of the  remaining tools (text editor, R, RStudio, and SQLite) may require administrator privileges
 	on your machine and instructions will be provided in the next few days for how best to proceed with installation
 	with support from KCIT.  
   </p>
   <p>
-	The instructions for other tools are provided below for people who either have administrator privileges on their 
-	King County machines or would like to follow long with these lessons on their personal computers. 
-	Please do not attempt to follow the instructions for other software installations on a KCIT machine!</strong>
+	The instructions for the full set of  tools are provided below for people who either have administrator privileges 
+	on their King County machines or would like to follow long with these lessons on their personal computers. 
+	<strong>Please do not attempt to follow the instructions for tools beyond Bash/Git on a KCIT machine!</strong>
   </p>
 </div> {% comment %} End of KCIT section. {% endcomment %}
 
@@ -467,8 +467,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 	with support from KCIT.  
   </p>
   <p>
-	The instructions below are provided for folks who either have administrator privileges or would like to follow 
-	along with these lessons on their personal computers. <strong>Please do not attempt to follow the instructions on a 
+	The instructions below are provided for people who either have administrator privileges or would like to follow 
+	along with these lessons on their personal computers. <strong>Please do not attempt to follow these instructions on a 
 	KCIT machine!</strong>
   </p>
 </div> {% comment %} End of KCIT section. {% endcomment %}
