@@ -297,6 +297,23 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
+
+<div id="kcit1"> {% comment %} Start of KCIT-specific section. {% endcomment %}
+  <h3>Set up for King County machines</h3>
+
+  <p>
+        Git for Windows (including Bash) can be installed without administrator privileges.  Follow the instructions below.
+	Installation of the  remaining tools (text editor, R, RStudio, and SQLite) may require administrator privileges
+	on your machine and instructions will be provided in the next few days for how best to proceed with installation
+	with support from KCIT.  
+  </p>
+  <p>
+	The instructions for other tools are provided below for people who either have administrator privileges on their 
+	King County machines or would like to follow long with these lessons on their personal computers. 
+	Please do not attempt to follow the instructions for other software installations on a KCIT machine!</strong>
+  </p>
+</div> {% comment %} End of KCIT section. {% endcomment %}
+
 <div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
   <h3>The Bash Shell</h3>
   <p>
@@ -440,6 +457,21 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     </div>
   </div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
+
+<div id="kcit2"> {% comment %} Start of KCIT-specific section. {% endcomment %}
+  <h3>Set up for King County machines</h3>
+
+  <p>
+        Installation and set up of the remaining tools (text editor, R, RStudio, and SQLite) require administrator privileges
+	on your machine and instructions will be provided in the next few days for how best to proceed with installation
+	with support from KCIT.  
+  </p>
+  <p>
+	The instructions below are provided for folks who either have administrator privileges or would like to follow 
+	along with these lessons on their personal computers. <strong>Please do not attempt to follow the instructions on a 
+	KCIT machine!</strong>
+  </p>
+</div> {% comment %} End of KCIT section. {% endcomment %}
 
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
   <h3>Text Editor</h3>
