@@ -116,8 +116,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).  
+	If possible, participants should bring the laptop they use at the County, and should speak to their 
+	supervisor or the workshop coordinator if they need a laptop for this training.  Participants should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   {% if page.carpentry == "swc" %}
   Software Carpentry's
@@ -460,6 +461,10 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
 
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  
 <div id="kcit2"> {% comment %} Start of KCIT-specific section. {% endcomment %}
   <h3>Set up for King County machines</h3>
 
