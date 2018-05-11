@@ -472,16 +472,16 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 	The instructions below are provided for people who either have administrator privileges or would like to follow 
 	along with these lessons on their personal computers. 
   </p>
-  <p></p>
-  <p></p>
-  <p></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
   <p>
 	<strong>Please do not attempt to follow the instructions below on a 
 	KCIT machine!</strong>
   </p>
-  <p></p>
-  <p></p>
-  <p></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
   </div> {% comment %} End of KCIT-specific section. {% endcomment %}
 
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
