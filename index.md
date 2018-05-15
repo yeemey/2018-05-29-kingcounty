@@ -299,24 +299,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </p>
 
 
-<div id="kcit1"> {% comment %} Start of KCIT-specific section. {% endcomment %}
-  <h3>Set up for King County machines</h3>
-
-  <p>
-        The Bash shell and Git for Windows can be installed without administrator privileges.  Follow the instructions below.
-	Installation of the  remaining tools (text editor, R, RStudio, and SQLite) may require administrator privileges
-	on your machine and instructions will be provided in the next few days for how best to proceed with installation
-	with support from KCIT.  
-  </p>
-  <p>
-	The instructions for the full set of  tools are provided below for people who either have administrator privileges 
-	on their King County machines or would like to follow long with these lessons on their personal computers. 
-  </p>
-  <p>
-	<strong>Please do not attempt to follow the instructions for tools beyond Bash/Git on a KCIT machine!</strong>
-  </p>
-</div> {% comment %} End of KCIT section. {% endcomment %}
-
 <div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
   <h3>The Bash Shell</h3>
   <p>
@@ -336,10 +318,11 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
             <li>Click on "Next".</li>
             {% comment %} Select Components {% endcomment %}
             <li>Click on "Next".</li>
+		  <li>Select nano or Notepad++ (as you prefer) as your default editor and click "Next"</li>
             {% comment %} Adjusting your PATH environment {% endcomment %}
             <li>
               <strong>
-                Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
+                Select "Use Git from the Windows Command Prompt" selected and click on "Next".
               </strong>
                 If you forgot to do this programs that you need for the workshop will not work properly.
                 If this happens rerun the installer and select the appropriate option.
@@ -466,7 +449,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   
 <div id="kcit2"> {% comment %} Start of KCIT-specific section. {% endcomment %}
   <h3>Set up for King County machines: Text editor and SQLite3 installation</h3>
-<p>have developed a customized script that will install the text editor and SQL tools on your machines without requiring administrator privileges.
+<p>We have developed a customized script that will install the text editor and SQL tools on your machines without requiring administrator privileges.
 	</p>
 	<p>
 	To install nano (our basic text editor) and  SQLite, open a Git Bash instance, leave it your home user directory (where it should open by default), and copy and paste the following commands into the bash terminal:
@@ -515,6 +498,7 @@ alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
       <h4 id="editor-windows">Windows</h4>
 	 <p>
         nano is a basic editor and the default that instructors use in the workshop. Running the installation commands in the "Setup for King County machines" section above will have installed nano for use with Bash.
+	    </p>
         
 </div>
 <div class="col-md-4">
