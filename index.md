@@ -455,7 +455,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 	To install nano (our basic text editor) and  SQLite
 		<ol>
 		<li>Open a Git Bash instance from the Start menu so that it opens in your home user directory (where it should open by default)</li>
-		<li>Copy and paste the following commands into the Bash terminal:</li>
+		<li>Copy and paste the following commands into the Bash terminal (depending on how you copy and paste, you may need to hit enter to run the last command line):</li>
 <pre>
 <code>
 mkdir .swc	
@@ -465,10 +465,10 @@ curl -L -O https://sqlite.org/2015/sqlite-shell-win32-x86-3090200.zip
 unzip sqlite-shell-win32-x86-3090200.zip -d .swc/sqlite3
 echo "alias nano='winpty `pwd`/.swc/nano/nano' 
 alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
+
 </code>
 </pre>
-<li>Close and reopen Git Bash. You should see a notification that a .bash_profile has been created for you.
-	This is normal and will only appear the first time after you run the installation commands</li>
+<li>Close and reopen Git Bash. You should see the notification "This looks like an incorrect setup. A ~/.bash_profile that loads ~/.bashrc will be created for you." This is normal and will only appear the first time after you run the installation commands.</li>
 			</ol>
 	</p>
 
