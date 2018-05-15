@@ -495,43 +495,37 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <p>
     When you're writing code, it's nice to have a text editor that is
     optimized for writing code, with features like automatic
-    color-coding of key words.  The default text editor on macOS and
-    Linux is usually set to Vim, which is not famous for being
-    intuitive.  If you accidentally find yourself stuck in it, try
-    typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
-    exclamation mark), then hitting Return to return to the shell.
+    color-coding of key words.  Notepad++ us a decent text editor that 
+	is available for download from the KCIT software center.  For this class we 
+	will default to nano a very simple editor with shell integration (installation 
+	instructions below), but Notepad++ is another decent text editor with syntax highlighting 
+	that is available for installation from the KCIT software center.
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
-      <p>
+	 <p>
         nano is a basic editor and the default that instructors use in the workshop.
-        To install it,
-        download the <a href="{{site.swc_installer}}">
-          {% if page.carpentry == "swc" %}
-          Software Carpentry
-          {% elsif page.carpentry == "dc" %}
-          Data Carpentry
-          {% elsif page.carpentry == "lc" %}
-          Library Carpentry
-          {% endif %}
-          Windows installer
-	</a>
-        and double click on the file to run it.
-        <strong>This installer requires an active internet connection.</strong>
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-        <strong>Be aware that you must
-          add its installation directory to your system path.</strong>
-        Please ask your instructor to help you do this.
-      </p>
-    </div>
-    <div class="col-md-4">
+        To install it, along with SQLite, open a Git Bash instance, leave it your home user directory (where it should open by default), and copy and paste the following commands into the bash terminal:
+	<p>  
+<pre>
+<code>
+mkdir .swc	
+curl -L -O http://www.nano-editor.org/dist/v2.2/NT/nano-2.2.6.zip
+unzip nano-2.2.6.zip -d .swc/nano
+curl -L -O https://sqlite.org/2015/sqlite-shell-win32-x86-3090200.zip
+unzip sqlite-shell-win32-x86-3090200.zip -d .swc/sqlite3
+echo "alias nano='winpty `pwd`/.swc/nano/nano' 
+alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
+</code>
+</pre>
+<p>
+	Close and reopen Git Bash. You should see a notification that a .bash_profile has been created for you.
+		 This is normal and will only appear the first time after you run the installation commands
+	</p>
+</div>
+<div class="col-md-4">
       <h4 id="editor-macosx">macOS</h4>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
