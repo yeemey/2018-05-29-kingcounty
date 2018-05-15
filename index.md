@@ -463,28 +463,36 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <p>&nbsp;</p>
   
 <div id="kcit2"> {% comment %} Start of KCIT-specific section. {% endcomment %}
-  <h3>Set up for King County machines</h3>
+  <h3>Set up for King County machines: Text editor and SQLite3 installation</h3>
+<p>have developed a customized script that will install the text editor and SQL tools on your machines without requiring administrator privileges.
+	</p>
+	<p>
+	To install nano (our basic text editor) and  SQLite, open a Git Bash instance, leave it your home user directory (where it should open by default), and copy and paste the following commands into the bash terminal:
+	</p>  
+<pre>
+<code>
+mkdir .swc	
+curl -L -O http://www.nano-editor.org/dist/v2.2/NT/nano-2.2.6.zip
+unzip nano-2.2.6.zip -d .swc/nano
+curl -L -O https://sqlite.org/2015/sqlite-shell-win32-x86-3090200.zip
+unzip sqlite-shell-win32-x86-3090200.zip -d .swc/sqlite3
+echo "alias nano='winpty `pwd`/.swc/nano/nano' 
+alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
+</code>
+</pre>
+<p>
+	Close and reopen Git Bash. You should see a notification that a .bash_profile has been created for you.
+		 This is normal and will only appear the first time after you run the installation commands
+	</p>
 
-  <p>
-        Installation and set up of the remaining tools (text editor, R, RStudio, and SQLite) require administrator privileges
-	on your machine and instructions will be provided in the next few days for how best to proceed with installation
-	with support from KCIT.  
+<p>
+        Installation of R and RStudio on King County machines will require going through the KCIT Software Center.  
   </p>
   <p>
-	The instructions below are provided for people who either have administrator privileges or would like to follow 
-	along with these lessons on their personal computers. 
+	For reference, full installation instructions for non-King County machines are provided below for people who either have administrator privileges or who would like to follow along with these lessons on their personal computers. 
   </p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>
-	<strong>Please do not attempt to follow the instructions below on a 
-	KCIT machine!</strong>
-  </p>
-  <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   </div> {% comment %} End of KCIT-specific section. {% endcomment %}
@@ -506,24 +514,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
 	 <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        To install it, along with SQLite, open a Git Bash instance, leave it your home user directory (where it should open by default), and copy and paste the following commands into the bash terminal:
-	<p>  
-<pre>
-<code>
-mkdir .swc	
-curl -L -O http://www.nano-editor.org/dist/v2.2/NT/nano-2.2.6.zip
-unzip nano-2.2.6.zip -d .swc/nano
-curl -L -O https://sqlite.org/2015/sqlite-shell-win32-x86-3090200.zip
-unzip sqlite-shell-win32-x86-3090200.zip -d .swc/sqlite3
-echo "alias nano='winpty `pwd`/.swc/nano/nano' 
-alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
-</code>
-</pre>
-<p>
-	Close and reopen Git Bash. You should see a notification that a .bash_profile has been created for you.
-		 This is normal and will only appear the first time after you run the installation commands
-	</p>
+        nano is a basic editor and the default that instructors use in the workshop. Running the installation commands in the "Setup for King County machines" section above will have installed nano for use with Bash.
+        
 </div>
 <div class="col-md-4">
       <h4 id="editor-macosx">macOS</h4>
@@ -568,11 +560,7 @@ alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
     <div class="col-md-4">
       <h4 id="sql-windows">Windows</h4>
       <p>
-        The same script provided in the nano installation above
-	      will have also installed SQLite. 
-	      If you did not already install nano and SQLite above, follow the instructions above
-	      to copy and paste the installation commands into a bash terminal.
-	      If you already used that installation script to configure nano, you do not need to run it again.
+         Running the installation commands in the "Setup for King County machines" section above will have installed SQLite for use with Bash for the workshop.  If you have already run the installation script once for nano, you do not need to run it again.
 	    </p>          
     </div>
     <div class="col-md-4">
