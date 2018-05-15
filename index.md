@@ -554,6 +554,46 @@ alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
     </div>
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
+
+<div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
+  <h3>SQLite</h3>
+
+  <p>
+    SQL is a specialized programming language used with databases.  We
+    use a simple database manager called
+    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="sql-windows">Windows</h4>
+      <p>
+        The same script provided in the nano installation above
+	      will have also installed SQLite. 
+	      If you did not already install nano and SQLite above, follow the instructions above
+	      to copy and paste the installation commands into a bash terminal.
+	      If you already used that installation script to configure nano, you do not need to run it again.
+	    </p>          
+    </div>
+    <div class="col-md-4">
+      <h4 id="sql-macosx">macOS</h4>
+      <p>
+        SQLite comes pre-installed on macOS.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="sql-linux">Linux</h4>
+      <p>
+        SQLite comes pre-installed on Linux.
+      </p>
+    </div>
+  </div>
+
+  <!---<p><strong>If you installed Anaconda, it also has a copy of SQLite
+    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
+    Instructors will provide a workaround for it if needed.</strong></p>--->
+</div> {% comment %} End of 'SQLite' section. {% endcomment %}
+
 <!--
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
@@ -660,17 +700,14 @@ alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
   <div class="row">
     <div class="col-md-4">
       <h4 id="r-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-        Note that if you have separate user and admin accounts, you should run the 
-        installers as administrator (right-click on .exe file and select "Run as 
-        administrator" instead of double-clicking). Otherwise problems may occur later, 
-        for example when installing R packages.
+	    <p>
+	    R and the RStudio IDE are both available for download from the KCIT Software Center.  If you are unable to access the files via the Software Center, please notify the workshop organizer and the KCIT Help Desk.
+	    </p>
+	    <p>
+	    If you want to install R/RStudio on <strong>a computer on which you have administrator
+	    rights</strong>, you can also download installation files directly from <a href="http://cran.r-project.org/index.html">CRAN</a> and <a href="http://www.rstudio.com/ide/download/desktop">RStudio</a>.  Note that you should
+	    only do the direct installation if you can run the installers as an administrator - otherwise
+	    problems may occur later, for example when installing R packages.
       </p>
     </div>
     <div class="col-md-4">
@@ -698,51 +735,6 @@ alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
   </div>
 </div> {% comment %} End of 'R' section. {% endcomment %}
 
-<div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_installer}}">
-          {% if page.carpentry == "swc" %}
-          Software Carpentry
-          {% elsif page.carpentry == "dc" %}
-          Data Carpentry
-          {% elsif page.carpentry == "lc" %}
-          Library Carpentry
-          {% endif %}
-          Windows Installer
-	</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">macOS</h4>
-      <p>
-        SQLite comes pre-installed on macOS.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> {% comment %} End of 'SQLite' section. {% endcomment %}
 <!--
 <div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
   <h3>OpenRefine</h3>
