@@ -452,8 +452,10 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p>We have developed a customized script that will install the text editor and SQL tools on your machines without requiring administrator privileges.
 	</p>
 	<p>
-	To install nano (our basic text editor) and  SQLite, open a Git Bash instance, leave it your home user directory (where it should open by default), and copy and paste the following commands into the bash terminal:
-	</p>  
+	To install nano (our basic text editor) and  SQLite
+		<ol>
+		<li>Open a Git Bash instance from the Start menu so that it opens in your home user directory (where it should open by default)</li>
+		<li>Copy and paste the following commands into the Bash terminal:</li>
 <pre>
 <code>
 mkdir .swc	
@@ -465,9 +467,9 @@ echo "alias nano='winpty `pwd`/.swc/nano/nano'
 alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
 </code>
 </pre>
-<p>
-	Close and reopen Git Bash. You should see a notification that a .bash_profile has been created for you.
-		 This is normal and will only appear the first time after you run the installation commands
+<li>Close and reopen Git Bash. You should see a notification that a .bash_profile has been created for you.
+	This is normal and will only appear the first time after you run the installation commands</li>
+			</ol>
 	</p>
 
 <p>
