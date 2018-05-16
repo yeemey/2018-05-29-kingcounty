@@ -499,7 +499,7 @@ alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
 	 <p>
-        nano is a basic editor and the default that instructors use in the workshop. Running the installation commands in the "Setup for King County machines" section above will have installed nano for use with Bash.
+        nano is a basic editor and the default that instructors use in the workshop. Running the installation commands in the "Setup for King County machines" section above will install nano for use with Bash. You can follow those steps for your personal Windows machine. 
 	    </p>
         
 </div>
@@ -675,13 +675,18 @@ alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
     <div class="col-md-4">
       <h4 id="r-windows">Windows</h4>
 	    <p>
-	    R and the RStudio IDE are both available for download from the KCIT Software Center.  If you are unable to access the files via the Software Center, please notify the workshop organizer and the KCIT Help Desk.
+	    R and the RStudio IDE are both available for download from the KCIT Software Center.  If you are unable to access the files via the Software Center, please notify the workshop organizer and the KCIT Help Desk. If you want to install R/RStudio on <strong>a computer on which you have administrator rights</strong>, follow the instructions below.
 	    </p>
 	    <p>
-	    If you want to install R/RStudio on <strong>a computer on which you have administrator
-	    rights</strong>, you can also download installation files directly from <a href="http://cran.r-project.org/index.html">CRAN</a> and <a href="http://www.rstudio.com/ide/download/desktop">RStudio</a>.  Note that you should
-	    only do the direct installation if you can run the installers as an administrator - otherwise
-	    problems may occur later, for example when installing R packages.
+	    Install R by downloading and running
+        <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
+        from <a href="https://cran.r-project.org/index.html">CRAN</a>.
+        Also, please install the
+        <a href="https://www.rstudio.com/ide/download/desktop/#download">RStudio IDE</a>.
+        Note that if you have separate user and admin accounts, you should run the 
+        installers as administrator (right-click on .exe file and select "Run as 
+        administrator" instead of double-clicking). Otherwise problems may occur later, 
+        for example when installing R packages.
       </p>
     </div>
     <div class="col-md-4">
