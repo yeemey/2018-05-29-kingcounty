@@ -318,7 +318,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
             <li>Click on "Next".</li>
             {% comment %} Select Components {% endcomment %}
             <li>Click on "Next".</li>
-		  <li><strong>Select nano or Notepad++ (as you prefer) as your default editor and click "Next"</strong></li>
+	    <li>Click on "Next".</li>
+	    <li>Click on "Next".</li>
+		  <li><strong>Select nano or Notepad++ (as you prefer - the instructor will be using nano in the workshop) as your default editor and click "Next"</strong></li>
             {% comment %} Adjusting your PATH environment {% endcomment %}
             <li>
               <strong>
@@ -469,6 +471,7 @@ alias sqlite3='winpty `pwd`/.swc/sqlite3/sqlite3'" >~/.bashrc
 </code>
 </pre>
 <li>Close and reopen Git Bash. You should see the notification "This looks like an incorrect setup. A ~/.bash_profile that loads ~/.bashrc will be created for you." This is normal and will only appear the first time after you run the installation commands.</li>
+<li>Your installation is complete. close the Git Bash window.</li>
 			</ol>
 	</p>
 
