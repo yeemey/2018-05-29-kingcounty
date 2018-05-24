@@ -317,8 +317,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
             {% comment %} Information {% endcomment %}
             <li>Click on "Next".</li>
             {% comment %} Select Components {% endcomment %}
-            <li>Click on "Next".</li>
-	    <li>Click on "Next".</li>
 	    <li>Click on "Next".</li>
 		  <li><strong>Select nano or Notepad++ (as you prefer - the instructor will be using nano in the workshop) as your default editor and click "Next"</strong></li>
             {% comment %} Adjusting your PATH environment {% endcomment %}
